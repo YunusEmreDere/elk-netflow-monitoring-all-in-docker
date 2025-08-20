@@ -106,7 +106,7 @@ setup.template.settings:
 # Starting with Beats version 6.0.0, the dashboards are loaded via the Kibana API.
 # This requires a Kibana endpoint configuration.
 setup.kibana:
-  hosts: ["10.67.67.34:5601"]
+  hosts: ["localhost:5601"]
   # Kibana Host
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
@@ -138,7 +138,7 @@ setup.kibana:
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["10.67.67.34:9200"]
+  hosts: ["localhost:9200"]
   # Performance preset - one of "balanced", "throughput", "scale",
   # "latency", or "custom".
   preset: balanced
